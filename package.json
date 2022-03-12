@@ -1,0 +1,29 @@
+{
+  "name": "keyless-office",
+  "version": "1.0.0",
+  "description": "Smart Keyless office using IoT Cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "client": "npm start --prefix client/",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Khalil Zayed",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@arduino/arduino-iot-client": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.3",
+    "request-promise": "^4.2.6"
+  }
+}
